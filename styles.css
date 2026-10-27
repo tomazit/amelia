@@ -1059,6 +1059,30 @@ textarea::placeholder {
   font-size: 8px;
   padding-bottom: 24px;
 }
+.footer-credit {
+  border-top: 1px solid var(--line);
+  padding: 15px 0 22px;
+}
+.footer-credit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 11px;
+  transition: color 0.2s;
+}
+.footer-credit-link:hover {
+  color: var(--olive);
+}
+.footer-credit-link img {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+}
+.footer-credit-link strong {
+  color: var(--ink);
+  font-weight: 600;
+}
 .floating-wa {
   position: fixed;
   right: 25px;
@@ -1836,9 +1860,12 @@ dialog::backdrop {
     gap: 16px;
   }
   .legal-note {
-    padding-bottom: 85px;
+    padding-bottom: 12px;
     max-width: 320px;
     font-size: 8px;
+  }
+  .footer-credit {
+    padding-bottom: 85px;
   }
   .floating-wa {
     right: 17px;
