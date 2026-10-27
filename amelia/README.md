@@ -1,0 +1,28 @@
+# Amelia · Tartas & encuentros
+
+Landing corporativa de una marca conceptual de tartas dulces y saladas en Rosario. HTML, CSS y JavaScript nativo, sin instalación, frameworks ni compilación.
+
+## Abrir
+
+Abrí `index.html` con tu navegador y mantené `styles.css` y `script.js` en la misma carpeta. Las fuentes de Google Fonts, las fotografías de Unsplash y el mapa de Google Maps necesitan conexión a Internet.
+
+## Personalizar
+
+- **Marca, textos y catálogo:** en `index.html`. Hay seis productos con precios de ejemplo en pesos argentinos. Reemplazá también title, description, Open Graph y favicon.
+- **Colores y tipografías:** variables de `:root` en `styles.css`: `--cream`, `--paper`, `--ink`, `--olive`, `--warm`, `--serif` y `--sans`. Si cambiás las familias, actualizá el enlace de Google Fonts en el HTML.
+- **WhatsApp:** en `CONFIG.whatsapp`, al principio de `script.js`. Usá el número internacional completo, solo dígitos. Para un celular argentino: `549` seguido del código de área y número, sin el `0` ni el `15`. El mensaje general se cambia en `CONFIG.defaultMessage`. Cada producto genera una consulta con su nombre.
+- **Correo:** en `CONFIG.email` y en los datos visibles de `index.html`. Con un email configurado, el formulario abre un borrador en la aplicación de correo del visitante. No envía mensajes automáticamente. Para recibir consultas directamente desde la web, conectá un servicio de formularios o un backend.
+- **Instagram:** agregá la URL completa del perfil en `CONFIG.instagram`.
+- **Ubicación y horarios:** actualizá los textos del hero, contacto y preguntas frecuentes. En el iframe, reemplazá el parámetro `q` por tu ciudad o domicilio real.
+- **Fotografías:** reemplazá los atributos `src` y `alt`; usá fotos reales de los productos antes de publicar. La imagen principal también figura en Open Graph. Las imágenes de catálogo son ilustrativas.
+- **Reseñas y datos legales:** reemplazá los testimonios ilustrativos por reseñas auténticas autorizadas y completá la información real del negocio. Los textos legales están en `legalCopy`, dentro de `script.js`.
+
+## Comportamiento de la demostración
+
+Los campos de contacto de `CONFIG` están vacíos a propósito. No se envían consultas a un número o correo inventado. Los botones de pedido preparan el mensaje en el formulario y explican que WhatsApp aún no está habilitado. La consulta por eventos también completa el mensaje con los datos necesarios.
+
+El catálogo filtra dulces y saladas, las preguntas usan `details` y `summary` nativos y los avisos legales se abren en un `dialog`. Las animaciones respetan la preferencia de movimiento reducido. Sin JavaScript, los productos, la navegación y las preguntas frecuentes siguen disponibles; el formulario requiere JavaScript para la demostración.
+
+## Verificación
+
+Se revisó la portada en navegador, el catálogo en una vista de 390 px, la apertura y el cierre del menú móvil, los filtros, las consultas de producto, el formulario sin transmisión externa, el acordeón y el diálogo de privacidad. Se verificó la sintaxis de JavaScript y que las anclas y referencias ARIA apunten a elementos existentes.
